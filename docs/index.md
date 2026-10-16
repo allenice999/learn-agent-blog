@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 笔记
-      link: /notes
+      link: /notes/react/jsx与组件
     # - theme: alt
     #   text: 项目架构
     #   link: /architecture
