@@ -1,3 +1,9 @@
+---
+next:
+  text: "jsx与组件"
+  link: "/notes/react/jsx与组件"
+---
+
 # React + Next.js 学习路线（分阶段）
 
 ## 学习路线总览
