@@ -23,13 +23,14 @@ export default defineConfig({
               { text: "2. Hooks核心", link: "/notes/react/hooks核心" },
               { text: "3. 表单与数据流", link: "/notes/react/表单与数据流" },
               { text: "4. Context用法", link: "/notes/react/context用法" },
+              { text: "5. useReducer与Zustand", link: "/notes/react/useReducer与zustand" },
               {
-                text: "5. Nextjs App Router",
+                text: "6. Nextjs App Router",
                 link: "/notes/react/nextjs的app_router",
               },
-              { text: "6. API与环境变量", link: "/notes/react/api与环境变量" },
+              { text: "7. API与环境变量", link: "/notes/react/api与环境变量" },
               {
-                text: "7. 流式响应（概念）",
+                text: "8. 流式响应（概念）",
                 link: "/notes/react/fetch流式响应",
               },
             ],
@@ -61,6 +62,7 @@ export default defineConfig({
     "notes/react/0020-hooks核心.md": "notes/react/hooks核心.md",
     "notes/react/0030-表单与数据流.md": "notes/react/表单与数据流.md",
     "notes/react/0040-context用法.md": "notes/react/context用法.md",
+    "notes/react/0045-useReducer与zustand.md": "notes/react/useReducer与zustand.md",
     "notes/react/0050-nextjs的app_router.md":
       "notes/react/nextjs的app_router.md",
     "notes/react/0060-api与环境变量.md": "notes/react/api与环境变量.md",
