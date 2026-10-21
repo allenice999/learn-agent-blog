@@ -9,11 +9,12 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
-      { text: "笔记", link: "/notes/react" },
+      { text: "React", link: "/notes/react" },
+      { text: "MCP", link: "/notes/mcp/mcp概念" },
       { text: "决策", link: "/decisions" },
     ],
     sidebar: {
-      "/notes/": {
+      "/notes/react/": {
         items: [
           {
             text: "react",
@@ -33,6 +34,19 @@ export default defineConfig({
                 text: "8. 流式响应（概念）",
                 link: "/notes/react/fetch流式响应",
               },
+            ],
+          },
+        ],
+      },
+      "/notes/mcp/": {
+        items: [
+          {
+            text: "mcp",
+            link: "/notes/mcp",
+            items: [
+              { text: "1. mcp概念", link: "/notes/mcp/mcp概念" },
+              { text: "2. codex连接不上fastmcp的stdio", link: "/notes/mcp/codex连接不上fastmcp的stdio" },
+              
             ],
           },
         ],
@@ -67,6 +81,9 @@ export default defineConfig({
       "notes/react/nextjs的app_router.md",
     "notes/react/0060-api与环境变量.md": "notes/react/api与环境变量.md",
     "notes/react/0070-fetch流式响应.md": "notes/react/fetch流式响应.md",
+
+    "notes/mcp/0010-mcp概念.md": "notes/mcp/mcp概念.md",
+    "notes/mcp/0020-codex连接不上fastmcp的stdio.md": "notes/mcp/codex连接不上fastmcp的stdio.md",
   },
   markdown: {
     config: (md) => {
