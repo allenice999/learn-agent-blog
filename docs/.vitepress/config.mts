@@ -69,6 +69,7 @@ export default defineConfig({
             link: "/notes/python/Pydantic转JSON",
             items: [
               { text: "1. Pydantic转JSON", link: "/notes/python/Pydantic转JSON" },
+              { text: "2. OpenAI SDK调用问题", link: "/notes/python/OpenAI_SDK调用问题" },
             ],
           },
         ],
@@ -115,6 +116,7 @@ export default defineConfig({
       "notes/agent/codex连接不上fastmcp的stdio.md",
 
     "notes/python/0010-Pydantic转JSON.md": "notes/python/Pydantic转JSON.md",
+    "notes/python/0020-OpenAI_SDK调用问题.md": "notes/python/OpenAI_SDK调用问题.md",
 
   },
   markdown: {
