@@ -9,11 +9,16 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
+      { text: "Agent", link: "/notes/agent/LLM消息" },
       { text: "React", link: "/notes/react" },
-      { text: "MCP", link: "/notes/mcp/mcp概念" },
-      { text: "决策", link: "/decisions" },
+      { text: "Python", link: "/notes/python/Pydantic转JSON" },
+      { text: "决策", link: "/decisions/sse协议设计" },
     ],
     sidebar: {
+      "/decisions/": {
+        base: "decisions",
+        items: [{ text: "1. SSE协议设计", link: "/sse协议设计" }],
+      },
       "/notes/react/": {
         items: [
           {
@@ -24,7 +29,10 @@ export default defineConfig({
               { text: "2. Hooks核心", link: "/notes/react/hooks核心" },
               { text: "3. 表单与数据流", link: "/notes/react/表单与数据流" },
               { text: "4. Context用法", link: "/notes/react/context用法" },
-              { text: "5. useReducer与Zustand", link: "/notes/react/useReducer与zustand" },
+              {
+                text: "5. useReducer与Zustand",
+                link: "/notes/react/useReducer与zustand",
+              },
               {
                 text: "6. Nextjs App Router",
                 link: "/notes/react/nextjs的app_router",
@@ -38,15 +46,29 @@ export default defineConfig({
           },
         ],
       },
-      "/notes/mcp/": {
+      "/notes/agent/": {
         items: [
           {
-            text: "mcp",
-            link: "/notes/mcp",
+            text: "Agent",
+            link: "/notes/agent/LLM消息",
             items: [
-              { text: "1. mcp概念", link: "/notes/mcp/mcp概念" },
-              { text: "2. codex连接不上fastmcp的stdio", link: "/notes/mcp/codex连接不上fastmcp的stdio" },
-              
+              { text: "1. LLM消息", link: "/notes/agent/LLM消息" },
+              { text: "2. mcp概念", link: "/notes/agent/mcp概念" },
+              {
+                text: "3. codex连接不上fastmcp的stdio",
+                link: "/notes/agent/codex连接不上fastmcp的stdio",
+              },
+            ],
+          },
+        ],
+      },
+      "/notes/python/": {
+        items: [
+          {
+            text: "Python",
+            link: "/notes/python/Pydantic转JSON",
+            items: [
+              { text: "1. Pydantic转JSON", link: "/notes/python/Pydantic转JSON" },
             ],
           },
         ],
@@ -72,18 +94,28 @@ export default defineConfig({
   ],
   cleanUrls: true,
   rewrites: {
+    "decisions/0010-sse协议设计.md": "decisions/sse协议设计.md",
+
     "notes/react/0010-jsx与组件.md": "notes/react/jsx与组件.md",
     "notes/react/0020-hooks核心.md": "notes/react/hooks核心.md",
     "notes/react/0030-表单与数据流.md": "notes/react/表单与数据流.md",
     "notes/react/0040-context用法.md": "notes/react/context用法.md",
-    "notes/react/0045-useReducer与zustand.md": "notes/react/useReducer与zustand.md",
+    "notes/react/0045-useReducer与zustand.md":
+      "notes/react/useReducer与zustand.md",
     "notes/react/0050-nextjs的app_router.md":
       "notes/react/nextjs的app_router.md",
     "notes/react/0060-api与环境变量.md": "notes/react/api与环境变量.md",
     "notes/react/0070-fetch流式响应.md": "notes/react/fetch流式响应.md",
 
-    "notes/mcp/0010-mcp概念.md": "notes/mcp/mcp概念.md",
-    "notes/mcp/0020-codex连接不上fastmcp的stdio.md": "notes/mcp/codex连接不上fastmcp的stdio.md",
+
+
+    "notes/agent/0010-LLM消息.md": "notes/agent/LLM消息.md",
+    "notes/agent/0015-mcp概念.md": "notes/agent/mcp概念.md",
+    "notes/agent/0020-codex连接不上fastmcp的stdio.md":
+      "notes/agent/codex连接不上fastmcp的stdio.md",
+
+    "notes/python/0010-Pydantic转JSON.md": "notes/python/Pydantic转JSON.md",
+
   },
   markdown: {
     config: (md) => {
