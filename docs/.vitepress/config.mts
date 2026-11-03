@@ -58,6 +58,10 @@ export default defineConfig({
                 text: "3. codex连接不上fastmcp的stdio",
                 link: "/notes/agent/codex连接不上fastmcp的stdio",
               },
+              {
+                text: "4. SSE 通信设计",
+                link: "/notes/agent/sse通信设计",
+              },
             ],
           },
         ],
@@ -114,6 +118,7 @@ export default defineConfig({
     "notes/agent/0015-mcp概念.md": "notes/agent/mcp概念.md",
     "notes/agent/0020-codex连接不上fastmcp的stdio.md":
       "notes/agent/codex连接不上fastmcp的stdio.md",
+    "notes/agent/0030-sse通信设计.md": "notes/agent/sse通信设计.md",
 
     "notes/python/0010-Pydantic转JSON.md": "notes/python/Pydantic转JSON.md",
     "notes/python/0020-OpenAI_SDK调用问题.md": "notes/python/OpenAI_SDK调用问题.md",
